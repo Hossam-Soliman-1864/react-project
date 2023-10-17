@@ -59,7 +59,7 @@ return (
      </form>
      <ul>
        {tasks.map((task, inputValue) => (
-         <li key={inputValue}>{task}
+         <li  style={{color: "red"}} key={inputValue}>{task}
          <button onClick={() => handleRemoveTask(inputValue)}>Remove</button>
          <button onClick={() => handleEditTask(inputValue)}>edit</button>
          <button onClick={() => handleSave(inputValue)}>save</button></li>
